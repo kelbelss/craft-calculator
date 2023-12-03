@@ -7,15 +7,19 @@ for (i = 0; i < accordion.length; i++) {
     })
 };
 
-
-
 document.getElementById('input').addEventListener('submit', function(event) {
     event.preventDefault(); 
  
     var water = document.getElementById('input-amount').value; 
     water = water.replace(/[a-zA-Z]/g, '');
     
+    if (water == "") {
+        alert("Please enter a value.");
+        return;
+     }
+
     var powder = (water * 1.4).toFixed(2); 
+
     document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of powder for ' + water + ' grams of water.'; 
 });
 
