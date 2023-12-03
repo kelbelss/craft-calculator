@@ -1,3 +1,5 @@
+/* Same for all */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .logo img {
@@ -76,6 +78,10 @@ body {
     padding-bottom: 15px;
 }
 
+
+/* Two types */
+
+/* 1 */
 .accordion .content-container .calcText #input {
     padding-top: 15px;
     line-height: 1.5;
@@ -83,10 +89,25 @@ body {
     padding-bottom: 15px;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 {
+    padding-top: 15px;
+    line-height: 1.5;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+/* 1 */
 #input-amount:focus {
     background-color: rgb(129, 188, 231);
 }
 
+/* 2 */
+#input-amount2:focus {
+    background-color: rgb(129, 188, 231);
+}
+
+/* 1 */
 .accordion .content-container .calcText #input #input-amount {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);
     border: 1px solid rgb(45, 153, 231);
@@ -98,6 +119,19 @@ body {
     text-align: center;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 #input-amount2 {
+    box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);
+    border: 1px solid rgb(45, 153, 231);
+    /* height: 3vw;
+    width: 20vw; */
+    height: 40px;
+    width: 150px;
+    /* font-size: 1.8vw; */
+    text-align: center;
+}
+
+/* 1 */
 .accordion .content-container .calcText #input #calculateBtn {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
     border: 1px solid rgb(45, 153, 231);
@@ -110,6 +144,20 @@ body {
     text-align: center;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 #calculateBtn2 {
+    box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
+    border: 1px solid rgb(45, 153, 231);
+    background-color: rgb(129, 188, 231);
+    /* height: 3vw;
+    width: 10vw; */
+    height: 40px;
+    width: 80px;
+    /* font-size: 1.8vw; */
+    text-align: center;
+}
+
+/* 1 */
 .accordion .content-container .calcText #input #resetBtn {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
     border: 1px solid rgb(45, 153, 231);
@@ -122,22 +170,62 @@ body {
     text-align: center;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 #resetBtn2 {
+    box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
+    border: 1px solid rgb(45, 153, 231);
+    background-color: rgb(129, 188, 231);
+    /* height: 3vw; */
+    height: 40px;
+    width: 58px;
+    /* width: 6vw;
+    font-size: 1.8vw; */
+    text-align: center;
+}
+
+/* 1 */
 .accordion .content-container .calcText #input #calculateBtn:hover {
     box-shadow: 0px 0px 6px 0px rgb(45, 153, 231);
     background-color: rgb(45, 153, 231);
     cursor: pointer;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 #calculateBtn2:hover {
+    box-shadow: 0px 0px 6px 0px rgb(45, 153, 231);
+    background-color: rgb(45, 153, 231);
+    cursor: pointer;
+}
+
+/* 1 */
 .accordion .content-container .calcText #input #resetBtn:hover {
     box-shadow: 0px 0px 6px 0px rgb(45, 153, 231);
     background-color: rgb(45, 153, 231);
     cursor: pointer;
 }
 
+/* 2 */
+.accordion .content-container .calcText #input2 #resetBtn2:hover {
+    box-shadow: 0px 0px 6px 0px rgb(45, 153, 231);
+    background-color: rgb(45, 153, 231);
+    cursor: pointer;
+}
+
+/* 1 */
 #powderOutput {
     font-size: 18px;
     color: rgb(45, 153, 231);
 }
+
+/* 2 */
+#powderOutput2 {
+    font-size: 18px;
+    color: rgb(45, 153, 231);
+}
+
+
+
+/* Same for all */
 
 .accordion .content-container .question {
     padding: 10px 0px;
