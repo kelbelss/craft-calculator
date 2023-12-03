@@ -33,7 +33,7 @@ body {
     width: 100%;
     max-width: 45%;
     /* height: 50%; */
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     /* rgba(72, 243, 255, 0.8); */
     padding: 20px;
     border-radius: 30px;
@@ -90,9 +90,11 @@ body {
 .accordion .content-container .calcText #input #input-amount {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);
     border: 1px solid rgb(45, 153, 231);
-    height: 3vw;
-    width: 20vw;
-    font-size: 1.8vw;
+    /* height: 3vw;
+    width: 20vw; */
+    height: 40px;
+    width: 150px;
+    /* font-size: 1.8vw; */
     text-align: center;
 }
 
@@ -100,9 +102,11 @@ body {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
     border: 1px solid rgb(45, 153, 231);
     background-color: rgb(129, 188, 231);
-    height: 3vw;
-    width: 10vw;
-    font-size: 1.8vw;
+    /* height: 3vw;
+    width: 10vw; */
+    height: 40px;
+    width: 90px;
+    /* font-size: 1.8vw; */
     text-align: center;
 }
 
@@ -110,9 +114,11 @@ body {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);;
     border: 1px solid rgb(45, 153, 231);
     background-color: rgb(129, 188, 231);
-    height: 3vw;
-    width: 6vw;
-    font-size: 1.8vw;
+    /* height: 3vw; */
+    height: 40px;
+    width: 75px;
+    /* width: 6vw;
+    font-size: 1.8vw; */
     text-align: center;
 }
 
