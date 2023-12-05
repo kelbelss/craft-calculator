@@ -8,24 +8,6 @@ for (i = 0; i < accordion.length; i++) {
 };
 
 
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//     coll[i].addEventListener("click", function () {
-//         this.classList.toggle("active");
-//         var content = this.nextElementSibling;
-//         if (content.style.maxHeight) {
-//             content.style.maxHeight = null;
-//         } else {
-//             content.style.maxHeight = content.scrollHeight + "px";
-//         }
-//     });
-// }
-
-
-
-
 // CeraCast
 document.getElementById('input').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -38,14 +20,13 @@ document.getElementById('input').addEventListener('submit', function (event) {
         return;
     }
 
-    ceraLiquid = liquid * 0.76, 89;
+    ceraLiquid = liquid * 0.768;
     // useLiquid = (ceraLiquid * 0.76,8);
     var powder = (ceraLiquid * 1.4).toFixed(1);
     // 76.8%
 
     document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of powder for ' + ceraLiquid.toFixed(1) + ' grams of liquid.';
 });
-
 
 document.getElementById('resetBtn').addEventListener('click', function (event) {
     event.preventDefault();
@@ -66,16 +47,35 @@ document.getElementById('input2').addEventListener('submit', function (event) {
         return;
     }
 
-    quickLiquid = liquid * 0.59, 73
+    quickLiquid = liquid * 0.5973
     var powder = (quickLiquid * 1.8).toFixed(1);
     // 59.73%
 
     document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of powder for ' + quickLiquid.toFixed(1) + ' grams of water.';
 });
 
-
 document.getElementById('resetBtn2').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('input-amount2').value = '';
     document.getElementById('powderOutput2').textContent = "";
-}); 
+});
+
+
+// Toggle
+document.getElementById('title1').addEventListener('click', function() {
+    var content = document.getElementById('collapsible1');
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
+    } else {
+        content.style.display = 'block';
+    }
+});
+
+document.getElementById('title2').addEventListener('click', function() {
+    var content = document.getElementById('collapsible2');
+    if(content.style.display === 'block') {
+        content.style.display = 'none';
+    } else {
+        content.style.display = 'block';
+    }
+});

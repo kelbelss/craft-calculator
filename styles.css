@@ -7,13 +7,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/* toggle */
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-   }
-
 body {
     background: url(craft.jpg) no-repeat center center/cover; 
     height: 100vh;
@@ -50,12 +43,13 @@ body {
     margin-bottom: 20px;
     overflow-y: scroll;
     box-shadow: 0px 0px 10px 0px rgb(45, 153, 231);
-    
 }
 
 .accordion .accordion-title {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
 .topInput {
@@ -69,12 +63,13 @@ body {
 }
 
 .accordion .content-container .calculator {
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
     font-size: 18px;
     position: relative;
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
     text-underline-offset: 0.2em;
+    padding-top: 30px;
 }
 
 .accordion .content-container .calcText {
@@ -87,6 +82,16 @@ body {
 
 
 /* Two types */
+
+/* 1 */
+#collapsible1 {
+    display: none;
+}
+
+/* 2 */
+#collapsible2 {
+    display: none;
+}
 
 /* 1 */
 .accordion .content-container .calcText #input {
@@ -102,16 +107,6 @@ body {
     line-height: 1.5;
     width: 100%;
     padding-bottom: 15px;
-}
-
-/* 1 */
-#input-amount:focus {
-    background-color: rgb(129, 188, 231);
-}
-
-/* 2 */
-#input-amount2:focus {
-    background-color: rgb(129, 188, 231);
 }
 
 /* 1 */
@@ -229,7 +224,6 @@ body {
     font-size: 18px;
     color: rgb(45, 153, 231);
 }
-
 
 
 /* Same for all */
