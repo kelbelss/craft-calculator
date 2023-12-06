@@ -17,20 +17,25 @@ body {
     overflow: auto;
 }
 
-.logo {
+/* .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .logo a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}  */
+
+a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo a {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img {
+img {
     max-width: 100%;
     width: 30%;
     border-radius: 30px;
