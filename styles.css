@@ -21,7 +21,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: auto; */
+}
+
+.logo a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
