@@ -12,7 +12,7 @@ for (i = 0; i < accordion.length; i++) {
 document.getElementById('input').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    var liquid = document.getElementById('input-amount').value;
+    let liquid = document.getElementById('input-amount').value;
     liquid = liquid.replace(/[a-zA-Z]/g, '');
 
     if (liquid == "") {
@@ -22,7 +22,7 @@ document.getElementById('input').addEventListener('submit', function (event) {
 
     ceraLiquid = liquid * 0.768;
     // useLiquid = (ceraLiquid * 0.76,8);
-    var powder = (ceraLiquid * 1.4).toFixed(1);
+    let powder = (ceraLiquid * 1.4).toFixed(1);
     // 76.8%
 
     document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of powder for ' + ceraLiquid.toFixed(1) + ' grams of liquid.';
@@ -39,7 +39,7 @@ document.getElementById('resetBtn').addEventListener('click', function (event) {
 document.getElementById('input2').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    var liquid = document.getElementById('input-amount2').value;
+    let liquid = document.getElementById('input-amount2').value;
     liquid = liquid.replace(/[a-zA-Z]/g, '');
 
     if (liquid == "") {
@@ -48,7 +48,7 @@ document.getElementById('input2').addEventListener('submit', function (event) {
     }
 
     quickLiquid = liquid * 0.5973
-    var powder = (quickLiquid * 1.8).toFixed(1);
+    let powder = (quickLiquid * 1.8).toFixed(1);
     // 59.73%
 
     document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of powder for ' + quickLiquid.toFixed(1) + ' grams of water.';
@@ -61,9 +61,9 @@ document.getElementById('resetBtn2').addEventListener('click', function (event) 
 });
 
 
-// Toggle
+// Toggle Heading
 document.getElementById('title1').addEventListener('click', function() {
-    var content = document.getElementById('collapsible1');
+    let content = document.getElementById('collapsible1');
     if(content.style.display === 'block') {
         content.style.display = 'none';
     } else {
@@ -72,7 +72,7 @@ document.getElementById('title1').addEventListener('click', function() {
 });
 
 document.getElementById('title2').addEventListener('click', function() {
-    var content = document.getElementById('collapsible2');
+    let content = document.getElementById('collapsible2');
     if(content.style.display === 'block') {
         content.style.display = 'none';
     } else {
