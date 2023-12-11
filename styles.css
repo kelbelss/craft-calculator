@@ -319,4 +319,8 @@ body {
     .logo img {
         width: 60%;
     }
+
+    .madeBy {
+        display: none;
+    }
  }
