@@ -25,7 +25,7 @@ document.getElementById('input').addEventListener('submit', function (event) {
     let powder = (ceraLiquid * 1.4).toFixed(1);
     // 76.8%
 
-    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of powder for ' + ceraLiquid.toFixed(1) + ' grams of liquid.';
+    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeraCast powder and ' + ceraLiquid.toFixed(1) + ' grams of CeraCast liquid.';
 });
 
 document.getElementById('resetBtn').addEventListener('click', function (event) {
@@ -51,7 +51,7 @@ document.getElementById('input2').addEventListener('submit', function (event) {
     let powder = (quickLiquid * 1.8).toFixed(1);
     // 59.73%
 
-    document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of powder for ' + quickLiquid.toFixed(1) + ' grams of water.';
+    document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of QuickCast powder and ' + quickLiquid.toFixed(1) + ' grams of QuickCast liquid.';
 });
 
 document.getElementById('resetBtn2').addEventListener('click', function (event) {
