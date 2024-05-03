@@ -20,9 +20,9 @@ document.getElementById('input').addEventListener('submit', function (event) {
         return;
     }
 
-    ceraLiquid = liquid * 0.768;
-    // useLiquid = (ceraLiquid * 0.76,8);
-    let powder = (ceraLiquid * 1.4).toFixed(1);
+    ceraLiquid = liquid * 0.3065;
+    // useLiquid = (ceraLiquid * 0.768);
+    let powder = (ceraLiquid * 6).toFixed(1);
     // 76.8%
 
     document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeraCast powder and ' + ceraLiquid.toFixed(1) + ' grams of CeraCast liquid.';
