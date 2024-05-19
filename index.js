@@ -20,7 +20,7 @@ document.getElementById('input').addEventListener('submit', function (event) {
         return;
     }
 
-    ceraLiquid = liquid * 0.3065;
+    ceraLiquid = liquid * 0.2876;
     // useLiquid = (ceraLiquid * 0.768);
     let powder = (ceraLiquid * 6).toFixed(1);
     // 76.8%
@@ -47,8 +47,8 @@ document.getElementById('input2').addEventListener('submit', function (event) {
         return;
     }
 
-    quickLiquid = liquid * 0.5973
-    let powder = (quickLiquid * 1.8).toFixed(1);
+    quickLiquid = liquid * 0.5709
+    let powder = (quickLiquid * 1.85).toFixed(1);
     // 59.73%
 
     document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of QuickCast powder and ' + quickLiquid.toFixed(1) + ' grams of QuickCast liquid.';
