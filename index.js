@@ -8,7 +8,7 @@ for (i = 0; i < accordion.length; i++) {
 };
 
 
-// CeraCast
+// CeramicCast
 document.getElementById('input').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -25,7 +25,7 @@ document.getElementById('input').addEventListener('submit', function (event) {
     let powder = (ceraLiquid * 6).toFixed(1);
     // 76.8%
 
-    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeraCast powder and ' + ceraLiquid.toFixed(1) + ' grams of CeraCast liquid.';
+    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeramicCast powder and ' + ceraLiquid.toFixed(1) + ' grams of water.';
 });
 
 document.getElementById('resetBtn').addEventListener('click', function (event) {
