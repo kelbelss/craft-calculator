@@ -340,49 +340,49 @@ body {
     /* 1 */
     .accordion .content-container .calcText #input #input-amount {
         height: 40px;
-        width: 220px;
-        font-size: 3.5vw;
+        width: 150px;
+        font-size: 3vw;
         margin-bottom: 10px;
     }
 
     /* 2 */
     .accordion .content-container .calcText #input2 #input-amount2 {
         height: 40px;
-        width: 220px;
-        font-size: 3.5vw;
+        width: 150px;
+        font-size: 3vw;
         margin-bottom: 10px;
     }
 
     /* 1 */
     .accordion .content-container .calcText #input #calculateBtn {
         height: 40px;
-        width: 80px;
-        font-size: 3.5vw;
-        margin-right: 2px;
+        width: 70px;
+        font-size: 3vw;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
     /* 2 */
     .accordion .content-container .calcText #input2 #calculateBtn2 {
         height: 40px;
-        width: 80px;
-        font-size: 3.5vw;
-        margin-right: 2px;
+        width: 70px;
+        font-size: 3vw;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
     /* 1 */
     .accordion .content-container .calcText #input #resetBtn {
         height: 40px;
-        width: 58px;
-        font-size: 3.5vw;
-        margin-left: 2px;
+        width: 48px;
+        font-size: 3vw;
         
     }
 
     /* 2 */
     .accordion .content-container .calcText #input2 #resetBtn2 {
         height: 40px;
-        width: 58px;
-        font-size: 3.5vw;
-        margin-left: 2px;
+        width: 48px;
+        font-size: 3vw;
     }
  }
