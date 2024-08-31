@@ -53,17 +53,19 @@ body {
 
 .accordion {
     width: 100%;
-    max-width: 45%;
-    /* height: 50%; */
+    max-width: 65%;
     background-color: rgba(255, 255, 255, 0.8);
-    /* rgba(72, 243, 255, 0.8); */
     padding: 20px;
     border-radius: 30px;
     text-align: center;
     margin-top: 20px;
-    overflow-y: scroll;
     box-shadow: 0px 0px 10px 0px rgb(45, 153, 231);
     margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion.open {
+    overflow-y: auto;
 }
 
 #accordion1 {
@@ -75,14 +77,13 @@ body {
 }
 
 .accordion .accordion-title {
-    /* margin-bottom: 30px; */
     text-align: center;
     cursor: pointer;
     user-select: none;
-}
+} 
 
 .topInput {
-    font-size: 14px;
+    font-size: 18px;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 18px;
@@ -90,15 +91,14 @@ body {
 }
 
 .bottomInput {
-    font-size: 12px;
+    font-size: 18px;
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 12px;
 }
 
 .accordion .content-container .calculator {
-    /* padding: 5px 0px; */
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
@@ -108,7 +108,6 @@ body {
 
 .accordion .content-container .calcText {
     padding-top: 5px;
-    font-size: 15px;
     line-height: 1.5;
     width: 100%;
     padding-bottom: 15px;
@@ -146,24 +145,20 @@ body {
 .accordion .content-container .calcText #input #input-amount {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);
     border: 1px solid rgb(45, 153, 231);
-    /* height: 3vw;
-    width: 20vw; */
     height: 40px;
-    width: 150px;
-    /* font-size: 1.8vw; */
+    width: 220px;
     text-align: center;
+    font-size: 1.2vw;
 }
 
 /* 2 */
 .accordion .content-container .calcText #input2 #input-amount2 {
     box-shadow: 0px 0px 2px 0px rgb(45, 153, 231);
     border: 1px solid rgb(45, 153, 231);
-    /* height: 3vw;
-    width: 20vw; */
     height: 40px;
-    width: 150px;
-    /* font-size: 1.8vw; */
+    width: 220px;
     text-align: center;
+    font-size: 1.2vw;
 }
 
 /* 1 */
@@ -174,8 +169,8 @@ body {
     /* height: 3vw;
     width: 10vw; */
     height: 40px;
-    width: 80px;
-    /* font-size: 1.8vw; */
+    width: 120px;
+    font-size: 1.2vw;
     text-align: center;
 }
 
@@ -187,8 +182,8 @@ body {
     /* height: 3vw;
     width: 10vw; */
     height: 40px;
-    width: 80px;
-    /* font-size: 1.8vw; */
+    width: 120px;
+    font-size: 1.2vw;
     text-align: center;
 }
 
@@ -199,9 +194,9 @@ body {
     background-color: rgb(129, 188, 231);
     /* height: 3vw; */
     height: 40px;
-    width: 58px;
-    /* width: 6vw;
-    font-size: 1.8vw; */
+    width: 88px;
+    /* width: 6vw;*/
+    font-size: 1.2vw;
     text-align: center;
 }
 
@@ -212,9 +207,9 @@ body {
     background-color: rgb(129, 188, 231);
     /* height: 3vw; */
     height: 40px;
-    width: 58px;
-    /* width: 6vw;
-    font-size: 1.8vw; */
+    width: 88px;
+    /* width: 6vw;*/
+    font-size: 1.2vw;
     text-align: center;
 }
 
@@ -263,7 +258,7 @@ body {
 
 .accordion .content-container .question {
     padding: 10px 0px;
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
     position: relative;
     text-decoration: underline;
@@ -278,20 +273,43 @@ body {
 .accordion .content-container .question::after {
     content: '+';
     position: absolute;
+    margin-left: 6px;
     /* right: -5px; */
 }
 
 .accordion .content-container .answer {
     padding-top: 8px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
+    font-weight: 900;
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    /* transition: 0.5s; */
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
+
+/* Scroll Bar */
+
+.accordion::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.accordion::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the track */
+    border-radius: 10px;
+    margin: 26px 0;
+}
+
+.accordion::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 153, 231); /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Padding around the thumb */
+}
+
+
+
 
 
 /* JS styling link */

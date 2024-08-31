@@ -63,6 +63,8 @@ document.getElementById('resetBtn2').addEventListener('click', function (event) 
 
 // Toggle Heading
 document.getElementById('title1').addEventListener('click', function() {
+    let accordion = this.closest('.accordion');
+    accordion.classList.toggle('open');
     let content = document.getElementById('collapsible1');
     if(content.style.display === 'block') {
         content.style.display = 'none';
@@ -72,6 +74,8 @@ document.getElementById('title1').addEventListener('click', function() {
 });
 
 document.getElementById('title2').addEventListener('click', function() {
+    let accordion = this.closest('.accordion');
+    accordion.classList.toggle('open');
     let content = document.getElementById('collapsible2');
     if(content.style.display === 'block') {
         content.style.display = 'none';
@@ -79,3 +83,4 @@ document.getElementById('title2').addEventListener('click', function() {
         content.style.display = 'block';
     }
 });
+
