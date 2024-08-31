@@ -253,7 +253,6 @@ body {
     color: rgb(45, 153, 231);
 }
 
-
 /* Same for all */
 
 .accordion .content-container .question {
@@ -308,10 +307,6 @@ body {
     border: 3px solid #f1f1f1; /* Padding around the thumb */
 }
 
-
-
-
-
 /* JS styling link */
 
 .accordion .content-container.active .answer {
@@ -340,5 +335,54 @@ body {
 
     .madeBy {
         display: none;
+    }
+    
+    /* 1 */
+    .accordion .content-container .calcText #input #input-amount {
+        height: 40px;
+        width: 220px;
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+
+    /* 2 */
+    .accordion .content-container .calcText #input2 #input-amount2 {
+        height: 40px;
+        width: 220px;
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+
+    /* 1 */
+    .accordion .content-container .calcText #input #calculateBtn {
+        height: 40px;
+        width: 80px;
+        font-size: 3.5vw;
+        margin-right: 2px;
+    }
+
+    /* 2 */
+    .accordion .content-container .calcText #input2 #calculateBtn2 {
+        height: 40px;
+        width: 80px;
+        font-size: 3.5vw;
+        margin-right: 2px;
+    }
+
+    /* 1 */
+    .accordion .content-container .calcText #input #resetBtn {
+        height: 40px;
+        width: 58px;
+        font-size: 3.5vw;
+        margin-left: 2px;
+        
+    }
+
+    /* 2 */
+    .accordion .content-container .calcText #input2 #resetBtn2 {
+        height: 40px;
+        width: 58px;
+        font-size: 3.5vw;
+        margin-left: 2px;
     }
  }
