@@ -21,8 +21,8 @@ document.getElementById('input').addEventListener('submit', function (event) {
     }
 
     ceraLiquid = liquid * 0.2876;
-    // useLiquid = (ceraLiquid * 0.768);
     let powder = (ceraLiquid * 6).toFixed(1);
+    // useLiquid = (ceraLiquid * 0.768);
     // 76.8%
 
     document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeramicCast powder and ' + ceraLiquid.toFixed(1) + ' grams of water.';
