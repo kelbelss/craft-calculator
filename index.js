@@ -7,7 +7,6 @@ for (i = 0; i < accordion.length; i++) {
     })
 };
 
-
 // CeramicCast
 document.getElementById('input').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -34,7 +33,6 @@ document.getElementById('resetBtn').addEventListener('click', function (event) {
     document.getElementById('powderOutput').textContent = "";
 });
 
-
 // QuickCast
 document.getElementById('input2').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -59,7 +57,6 @@ document.getElementById('resetBtn2').addEventListener('click', function (event) 
     document.getElementById('input-amount2').value = '';
     document.getElementById('powderOutput2').textContent = "";
 });
-
 
 // Toggle Heading
 document.getElementById('title1').addEventListener('click', function() {
