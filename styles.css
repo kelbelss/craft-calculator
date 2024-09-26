@@ -273,7 +273,6 @@ body {
     content: '+';
     position: absolute;
     margin-left: 6px;
-    /* right: -5px; */
 }
 
 .accordion .content-container .answer {
@@ -302,7 +301,7 @@ body {
 }
 
 .accordion::-webkit-scrollbar-thumb {
-    background-color: rgb(45, 153, 231); /* Color of the scrollbar thumb */
+    background-color: rgb(45, 153, 231); /* Colour of the scrollbar thumb */
     border-radius: 10px;
     border: 3px solid #f1f1f1; /* Padding around the thumb */
 }
