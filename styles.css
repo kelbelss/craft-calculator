@@ -115,26 +115,11 @@ body {
 
 /* Two types */
 
-/* 1 */
-#collapsible1 {
+#collapsible1, #collapsible2 {
     display: none;
 }
 
-/* 2 */
-#collapsible2 {
-    display: none;
-}
-
-/* 1 */
-.accordion .content-container .calcText #input {
-    padding-top: 15px;
-    line-height: 1.5;
-    width: 100%;
-    padding-bottom: 15px;
-}
-
-/* 2 */
-.accordion .content-container .calcText #input2 {
+.accordion .content-container .calcText #input, .accordion .content-container .calcText #input2 {
     padding-top: 15px;
     line-height: 1.5;
     width: 100%;
