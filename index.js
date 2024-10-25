@@ -19,7 +19,7 @@ document.getElementById('input').addEventListener('submit', function (event) {
         return;
     }
 
-    ceraLiquid = liquid * 0.3008;
+    ceraLiquid = liquid * 0.308;
     let powder = (ceraLiquid * 4.5).toFixed(1);
     // useLiquid = (ceraLiquid * 0.768);
     // 76.8%
@@ -33,7 +33,7 @@ document.getElementById('resetBtn').addEventListener('click', function (event) {
     document.getElementById('powderOutput').textContent = "";
 });
 
-// QuickCast
+// QuickCast Ultra
 document.getElementById('input2').addEventListener('submit', function (event) {
     event.preventDefault();
 
