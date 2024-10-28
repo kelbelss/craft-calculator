@@ -7,8 +7,7 @@ for (i = 0; i < accordion.length; i++) {
     })
 };
 
-
-// CeraCast
+// CeramicCast Lite
 document.getElementById('input').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -20,12 +19,12 @@ document.getElementById('input').addEventListener('submit', function (event) {
         return;
     }
 
-    ceraLiquid = liquid * 0.2876;
+    ceraLiquid = liquid * 0.308;
+    let powder = (ceraLiquid * 4.5).toFixed(1);
     // useLiquid = (ceraLiquid * 0.768);
-    let powder = (ceraLiquid * 6).toFixed(1);
     // 76.8%
 
-    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeraCast powder and ' + ceraLiquid.toFixed(1) + ' grams of CeraCast liquid.';
+    document.getElementById('powderOutput').textContent = 'You need ' + powder + ' grams of CeramicCast LITE powder and ' + ceraLiquid.toFixed(1) + ' grams of water.';
 });
 
 document.getElementById('resetBtn').addEventListener('click', function (event) {
@@ -34,8 +33,7 @@ document.getElementById('resetBtn').addEventListener('click', function (event) {
     document.getElementById('powderOutput').textContent = "";
 });
 
-
-// QuickCast
+// QuickCast Ultra
 document.getElementById('input2').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -47,11 +45,11 @@ document.getElementById('input2').addEventListener('submit', function (event) {
         return;
     }
 
-    quickLiquid = liquid * 0.5709
-    let powder = (quickLiquid * 1.85).toFixed(1);
+    quickLiquid = liquid * 0.588
+    let powder = (quickLiquid * 1.8).toFixed(1);
     // 59.73%
 
-    document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of QuickCast powder and ' + quickLiquid.toFixed(1) + ' grams of QuickCast liquid.';
+    document.getElementById('powderOutput2').textContent = 'You need ' + powder + ' grams of QuickCast Ultra powder and ' + quickLiquid.toFixed(1) + ' grams of QuickCast Ultra liquid.';
 });
 
 document.getElementById('resetBtn2').addEventListener('click', function (event) {
@@ -59,7 +57,6 @@ document.getElementById('resetBtn2').addEventListener('click', function (event) 
     document.getElementById('input-amount2').value = '';
     document.getElementById('powderOutput2').textContent = "";
 });
-
 
 // Toggle Heading
 document.getElementById('title1').addEventListener('click', function() {
